@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TRAIN</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="app.js"></script>
+    <script>
+        function calc()
+      {
+        var n1=document.getElementById('n1').value;
+        var n2=document.getElementById('n2').value;
+        var vehicletype=document.getElementById('vehicle').value;
+        var fueltype=document.getElementById('fuel').value;
+        var result=document.getElementById('result').value;
+        var result1=document.getElementById('result1').value;
+        if(fueltype==='DIESEL')
+         {
+            if(vehicletype==='Passenger')
+            {
+              document.getElementById('result').value=n1*12.15*n2;
+            }
+            else if(vehicletype==='GOODS')
+            {
+              document.getElementById('result').value=n1*7.425*n2;
+            }
+         }
+      }
+    </script>
+
+    <head>
+        <body>
+          <img class="img1 c2" src="https://www.jamix.com/wp-content/uploads/2020/10/CO2-800x500-1.png" alt="carbon footprint">
+          <div class="top1">
+            <button class="button"> <a href="#calculate"><span>CALCULATE</span></a></button>
+            <button class="button"><a href="index.html"><span>HOME</span></a></button>
+          </div>
+
+          <img class="img2" src="https://media.istockphoto.com/id/903338678/photo/train.jpg?s=612x612&w=0&k=20&c=7xomhaoKCfK5ytbv5R8p0QhNaz-saM1eQo9amCfaHQQ=" alt="train">
+
+           <div class="container">
+          <br>  <h1 class="heading1"><center>
+            CARBON EMISSION BY TRAIN
+
+        </h1>
+          </center>
+
+          <br>
+          <p class="n1">
+            Select fuel type:
+          </p>
+          <div class="n1" id="calculate">
+        </select>
+     <br>   <select id="vehicle">
+
+            <optgroup label="TRAIN">
+              <option value="GOODS">Goods Train</option>
+              <option value="Passenger">Passenger Train</option>
+              </optgroup>
+        </select> <br>
+<br />
+        <select id="fuel">
+
+          <option value="DIESEL">DIESEL</option>
+
+        </select>
+      </div>
+
+
+      <p class="n1">AVERAGE FUEL used <input type="float" id="n1"/></p>
+      <p class="n1">AVERAGE HOURS used <input type="float" id="n2"/></p>
+
+<div class="n1">
+  <button onclick="calc();">RESULT</button><br />
+   <p class="n2">TOTAL CO2=<input type="number"  id="result"/></p>
+</div>
+
+
+
+
+     </div>
+
+     <div class="bottom-container">
+       <center>
+         <button class="type1"><a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a></button>
+         <button class="type1"><a class="footer-link" href="https://twitter.com/">Twitter</a></button>
+         <button class="type1"><a class="footer-link" href="https://www.google.co.in/">Website</a></button>
+         <p class="copy">© KMS.</p>
+       </center>
+     </div>
+  </body>
+</head>
+</html>

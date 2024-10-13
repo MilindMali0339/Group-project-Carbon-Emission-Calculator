@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AUTORICKSHAW</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="app.js"></script>
+    <script>
+        function calc()
+      {
+        var n1=document.getElementById('n1').value;
+        var n2=document.getElementById('n2').value;
+        //var vehicletype=document.getElementById('vehicle').value;
+        var fueltype=document.getElementById('fuel').value;
+         var result=document.getElementById('result').value;
+         var result1=document.getElementById('result1').value;
+         if(fueltype==='PETROL')
+         {
+            document.getElementById('result').value=n1*0.389*n2;
+         }
+          else if(fueltype==='DIESEL')
+         {
+            document.getElementById('result').value=n1*1.6*n2;
+         }
+         else if(fueltype==='CNG')
+         {
+            document.getElementById('result').value=n1*1.85*n2;
+          document.getElementById('result1').value=n1*0.931*n2;
+         }
+      }
+
+
+
+    </script>
+
+    <head>
+        <body>
+          <img  class="img1 c2" src="https://www.jamix.com/wp-content/uploads/2020/10/CO2-800x500-1.png" alt="carbon footprint">
+          <div class="top1">
+            <button class="button"> <a href="#calculate"><span>CALCULATE</span></a></button>
+            <button class="button"><a href="index.html"><span>HOME</span></a></button>
+          </div>
+          <img class="img2" src="https://etimg.etb2bimg.com/photo/78515475.cms" alt="auto">
+           <div class="container">
+          <br>
+          <CENTER>
+            <h1 class="heading1">
+                CARBON EMISSION BY AUTORICKSHAW
+
+            </h1>
+          </CENTER>
+          <br>
+        </select>
+
+<div class="n1" id="calculate">
+  <select id="fuel">
+    <p class="n1">
+      Select fuel type:
+    </p>
+    <option value="PETROL">
+       PETROL
+    </option>
+    <option value="DIESEL">DIESEL</option>
+    <option value="CNG">CNG</option>
+  </select>
+</div>
+
+      <p class="n1">AVERAGE FUEL used <input type="float" id="n1"/></p>
+      <p class="n1">AVERAGE HOURS used <input type="float" id="n2"/></p>
+
+<div class="n1">
+  <button onclick="calc();">RESULT</button><br />
+   <p class="n2">TOTAL CO2=<input type="number"  id="result"/><br /></p>
+   <button onclick="calc();">RESULT1</button><br />
+   <p class="n2">TOTAL CH4=<input type="percentage" id="result1"/></p>
+</div>
+
+
+
+     </div>
+
+     <div class="bottom-container">
+       <center>
+         <button class="type1"><a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a></button>
+         <button class="type1"><a class="footer-link" href="https://twitter.com/">Twitter</a></button>
+         <button class="type1"><a class="footer-link" href="https://www.google.co.in/">Website</a></button>
+         <p class="copy">© KMS.</p>
+       </center>
+     </div>
+  </body>
+</head>
+</html>
